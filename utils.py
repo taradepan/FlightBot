@@ -22,7 +22,6 @@ def get_flight_prices(departure_id, arrival_id, outbound_date, return_date=None,
     search = GoogleSearch(params)
     results = search.get_dict()
     return results
-# print(get_flight_prices("BLR","MAA","2024-10-19"))
 
 def search(Search_input):
     params = {
@@ -49,14 +48,11 @@ def pretty_print_messages(messages) -> None:
         if message["role"] != "assistant":
             continue
 
-        # print agent name in blue
         print(f"\033[94m{message['sender']}\033[0m:", end=" ")
 
-        # print response, if any
         if message["content"]:
             print(message["content"])
 
-        # print tool calls in purple, if any
         tool_calls = message.get("tool_calls") or []
         if len(tool_calls) > 1:
             print()

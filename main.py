@@ -1,5 +1,4 @@
 from swarm import Swarm, Agent
-from swarm.repl import run_demo_loop
 import json
 from utils import get_flight_prices, search, get_current_date_time, pretty_print_messages
 client = Swarm()
@@ -18,11 +17,6 @@ agent = Agent(
     functions=[get_flight_prices, search, get_current_date_time],
 )
 
-
-print("Starting Swarm CLI 🐝")
-context_variables = None
-stream = False
-debug = False
 messages = []
 while True:
     user_input = input("\033[90mUser\033[0m: ")
