@@ -7,7 +7,7 @@ agent = Agent(
     name="Agent",
     instructions="""Your task is to check if you got the correct response for the user query.
     In case you don't know the departure_id or arrival_id, you can search for the Airport IATA code. 
-    Search for the cheapest flight prices based on the user query and return the results. BEFORE passing to flight agent check the current date and time (if Needed).
+    Search for the cheapest flight prices based on the user query and return the results. Check the current date and time (if Needed).
     If user has any more queries, answer them.
     for get_flight_prices, type can be 1, 2, 3.
     1 - Round trip (default)
