@@ -31,11 +31,9 @@ def search(Search_input):
     "google_domain": "google.com",
     "hl": "en"
     }
-    print(params)
     search = GoogleSearch(params)
     results = search.get_dict()
     results = results.get("answer_box").get("answer") if results.get("answer_box") else results.get("related_questions")
-    print(results)      
     return results
 
 
