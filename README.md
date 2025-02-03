@@ -2,38 +2,36 @@
 FlightBot is a Python-based application designed to help users search for flight prices and information. With its user-friendly interface and advanced search capabilities, FlightBot makes it easy to find the best flights for your next trip.
 
 ## 🌟 Key Features and Capabilities
-* Search for flight prices based on departure and arrival airports, outbound and return dates, and travel type (one-way, round-trip, or multi-city)
-* Get current date and time information
-* Search for airport IATA codes if needed
-* Support for multiple search types (1 - Round trip, 2 - One way, 3 - Multi-city)
+* Search for flight prices based on departure and arrival airports, outbound and return dates, and travel type (one-way, round-trip, or multi-city) 🛫️
+* Get current date and time information 🕰️
+* Search for airport IATA codes if needed 🗺️
+* Support for multiple search types (1 - Round trip, 2 - One way, 3 - Multi-city) 📈
 
 ## 🛠️ Technologies and Dependencies Used
-* Python as the primary programming language
-* SerpAPI for Google search results and Google Flights API
-* OpenAI for AI-powered search capabilities
-* Google Search Results API for searching airport IATA codes
+* Python as the primary programming language 🐍
+* SerpAPI for Google search results and Google Flights API 📊
+* OpenAI for AI-powered search capabilities 🤖
 
 ## 📚 Setup Instructions
-1. Clone the repository using `git clone https://github.com/taradepan/FlightBot.git`
-2. Install the required dependencies using `pip install -r requirements.txt`
-3. Create a `.env` file and add your SerpAPI key as `SERP_API_KEY`
-4. Run the application using `python main.py`
+1. Clone the repository using `git clone https://github.com/taradepan/FlightBot.git` 📁
+2. Install the required dependencies using `pip install -r requirements.txt` 📦
+3. Set up your environment variables, including your SerpAPI key, in a `.env` file 📝
 
 ## 📊 Usage Guide
-1. Run the application and follow the prompts to search for flights
-2. Enter your departure and arrival airports, outbound and return dates, and travel type
-3. The application will display the search results, including flight prices and information
-4. You can also search for airport IATA codes if needed
+1. Run the application using `python main.py` 🚀
+2. Interact with the FlightBot by typing your queries, and it will respond with the relevant information 💬
+3. Use the `search` function to find airport IATA codes or other information 🗺️
+4. Use the `get_flight_prices` function to search for flight prices based on your travel plans 🛫️
 
 ## 🤝 Contribution Guidelines
-* Fork the repository and create a new branch for your changes
-* Make sure to test your changes thoroughly before submitting a pull request
-* Follow standard professional guidelines for commit messages and code formatting
+* Fork the repository and submit a pull request with your changes 📈
+* Ensure that your code is well-documented and follows the existing coding standards 📚
+* Test your changes thoroughly to ensure they do not break existing functionality 🚫
 
 ## 📝 Additional Notes and Tips
-* Make sure to replace the `SERP_API_KEY` in the `.env` file with your actual SerpAPI key
-* The application uses a simple text-based interface, so make sure to follow the prompts carefully
-* If you encounter any issues or have questions, feel free to open an issue or contact the maintainers 🤔
+* Make sure to handle your API keys and environment variables securely 🔒
+* Experiment with different search types and parameters to get the most out of FlightBot 🎉
+* If you encounter any issues or have suggestions, feel free to open an issue or submit a pull request 🤔
 
 👍 Happy flying with FlightBot! 🚀
 
